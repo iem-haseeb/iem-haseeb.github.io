@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tanees Portfolio</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="css/flexslider.css" />
+  <!-- Flaticons  -->
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <style>
+    .card-profiles {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: centesr;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover, .pros:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .pros{
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #ff0000;
+      /* Replace with your desired icon color */
+      margin-bottom: 10px;
+    }
+
+    .line {
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      width: 80%;
+    }
+
+    .section-container {
+      font-family: "Quicksand", Arial, sans-serif, "Playfair Display", Georgia,
+        serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .intro-base {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .name {
+      font-size: 4em;
+
+      margin: 0 0 10px 0;
+    }
+
+    .section-container h1,
+    h2 {
+      margin: 0.4em 0;
+    }
+
+    .section-container h1 {
+      font-family: "Quicksand", Arial, sans-serif, "Playfair Display", Georgia,
+        serif;
+      font-size: 2.5m;
+    }
+
+    .section-container h2 {
+      font-size: 2em;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      color: white !important;
+    }
+
+    .button:active {
+      color: white !important;
+      text-decoration: none;
+    }
+
+    .button:focus {
+      color: white !important;
+      text-decoration: none;
+    }
+
+    /* about animations */
+    
+  </style>
+</head>
+
+<body>
+  <div id="colorlib-page">
+    <div class="container-wrap">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar"><i></i></a>
+      <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+        <div class="text-center">
+          <div class="author-img" style="background-image: url(images/about.jfif)"></div>
+          <h2 id="colorlib-logo">
+            <a href="index.html">Muhammad Haseeb Ashraf</a>
+          </h2>
+          <span class="position" style="font-size: 1.15rem !important">
+            <a href="https://www.linkedin.com/in/muhammad-haseeb-18320720a/" target="_blank">Software Developer</a>
+        
+            <br>
+            <a target="_blank" href="mailto:im-haseeb@outlook.com" style="text-transform: lowercase !important;">im-haseeb@outlook.com</a>
+          </span>
+          <span class="" style="font-size: 1.15rem !important"></span>
+        </div>
+        
+        <nav id="colorlib-main-menu" role="navigation" class="navbar">
+          <div id="navbar" class="collapse">
+            <ul>
+              <li class="active">
+                <a href="#" data-nav-section="home">Home</a>
+              </li>
+              <li><a href="#" data-nav-section="about">About</a></li>
+              <li><a href="#" data-nav-section="skills">Skills</a></li>
+              <li><a href="#" data-nav-section="education">Education</a></li>
+             
+              <li>
+                <a href="#" data-nav-section="experience">Experience</a>
+              </li>
+              <li>
+                <a href="#" data-nav-section="iexperience">International Experience</a>
+              </li>
+              <li>
+                <a href="#" data-nav-section="awards">Honor & Awards</a>
+              </li>
+              <li><a href="#" data-nav-section="work">Projects</a></li>
+              <li><a href="#" data-nav-section="contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <div id="colorlib-main">
+        <section id="colorlib-hero" class="js-fullheight" data-section="home">
+          <div class="flexslider js-fullheight">
+            <ul class="slides">
+              <li style="background-color: #007bff;">
+                <div class="overlay"></div>
+                <div class="section-container main-intro" style="background: linear-gradient(-45deg, #e3f2fd, #ffffff, #c8e6c9);">
+                  <div class="intro-text">
+                    <div class="intro-base">I am</div>
+                    <p class="name">Muhammad Haseeb Ashraf</p>
+                    <h1>
+                      I'm an
+                      <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "Software Engineer","AI Enthusiast.","Backend Developer."," Researcher.", "Computer Scientist"]'></span>
+                    </h1>
+                  </div>
+                  <a target="_blank" href="./Muhammad_Haseeb_Ashraf_CV.pdf" class="button">Download CV</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+          
+    <!-- ****************************************************************** -->
+<!--                            About Me                               -->
+<!-- ****************************************************************** -->
+<section class="colorlib-about" data-section="about">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+          <div class="col-md-12">
+            <div class="about-desc">
+              <h2 class="colorlib-heading">About Me</h2>
+              <p>
+                <strong>I am Muhammad Haseeb Ashraf,</strong> a passionate Computer Science student and Artificial Intelligence 
+                enthusiast. Currently pursuing my Bachelor's degree with a GPA of 3.71, I specialize in Natural Language 
+                Processing and aim to revolutionize the medical field through AI-powered solutions. I enjoy working on 
+                innovative projects and leveraging my technical expertise to create impactful solutions for real-world 
+                challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 text-center">
+          <div class="docs-row text-center animate-box" data-animate-effect="fadeInLeft">
+            <div class="row-pro text-center">
+              <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInLeft">
+                <h2 class="colorlib-heading animate-box">Profiles</h2>
+              </div>
+              <div class="docss col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
+                <a class="card-profiles" target="_blank" href="https://github.com/iem-haseeb">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="images/github.png" alt="GitHub Profile" />
+                    </div>
+                    <div class="line" style="color: #404040">
+                      GitHub Profile
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
+                <a class="card-profiles" target="_blank"
+                  href="https://www.linkedin.com/in/muhammad-haseeb-18320720a/">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="images/linkedin.png" alt="LinkedIn Profile" />
+                    </div>
+                    <div class="line" style="color: #0288d1">
+                      LinkedIn Profile
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
+                <a class="card-profiles" target="_blank" href="https://www.fiverr.com/mhaseebashraf25/buying?source=avatar_menu_profile">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="images/fiverr.png" alt="Fiverr Profile" />
+                    </div>
+                    <div class="line" style="color: #66bb6a">
+                      Fiverr Profile
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
+                <a class="card-profiles" target="_blank" href="https://www.upwork.com/freelancers/~016092765ab11f5dd6">
+                  <div class="card">
+                    <div class="icon">
+                      <img src="images/upwork.png" alt="Upwork Profile" />
+                    </div>
+                    <div class="line" style="color: #66bb6a">
+                      Upwork Profile
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+<!-- ****************************************************************** -->
+<!--                            Skills                                  -->
+<!-- ****************************************************************** -->
+
+<section class="colorlib-skills" data-section="skills">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading text-center" style="font-size: 3rem;">
+          Skills
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+        <p>Below is a comprehensive list of my technical expertise, enhanced with icons for better presentation:</p>
+      </div>
+
+      <!-- Technical -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+        <h3><i class="icon-lightbulb-o"></i> Technical</h3>
+        <ul>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+
+      <!-- Programming Languages & Tools -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <h3><i class="icon-code"></i> Programming Languages & Tools</h3>
+        <ul>
+          <li>C/C++</li>
+          <li>Python</li>
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <!-- Data Analytics & Databases -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+        <h3><i class="icon-bar-chart"></i> Data Analytics & Databases</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>Oracle</li>
+          <li>PowerBI</li>
+          <li>SQL</li>
+          <li>Looker Studio</li>
+          <li>Tableau</li>
+        </ul>
+      </div>
+
+      <!-- Web Development -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <h3><i class="icon-globe"></i> Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Rails</li>
+          <li>NodeJS</li>
+          <li>AJAX</li>
+          <li>SQLite3</li>
+          <li>MongoDB</li>
+          <li>FastAPI</li>
+          <li>Docker</li>
+          <li>Redis</li>
+        </ul>
+      </div>
+
+      <!-- Android Development -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+        <h3><i class="icon-mobile"></i> Android Development</h3>
+        <ul>
+          <li>Android Studio</li>
+          <li>Java</li>
+          <li>Firebase</li>
+          <li>SQLite</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+
+      <!-- AI & Machine Learning -->
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <h3><i class="icon-rocket"></i> Artificial Intelligence & Machine Learning</h3>
+        <ul>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>Scikit-learn</li>
+          <li>Jupyter</li>
+          <li>Google Colab</li>
+          <li>Pandas</li>
+          <li>Numpy</li>
+          <li>Feature Extraction</li>
+          <li>Data Cleaning and Preprocessing</li>
+          <li>SLURM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ****************************************************************** -->
+<!-- 							Education 														-->
+<!-- ****************************************************************** -->
+<section class="colorlib-education" data-section="education">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading animate-box">Education</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline-centered">
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-1">
+                <img src="images/graduation.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a>BSc Computer Science</a>
+                  <span>2021 - 2025</span>
+                </h2>
+                <p>
+                  FAST National University of Computer and Emerging Sciences, Pakistan <br />
+                  CGPA: 3.71
+                </p>
+                <p>Relevant Coursework: Programming Fundamentals, Object Oriented Programming, Data Structures, Design and Analysis of Algorithms, Databases, Operating Systems, Computer Networks, Artificial Intelligence, Natural Language Processing, Information Security, Probability and Statistics, Theory of Automata</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-3">
+                <img src="images/college.png" alt="" />
+              </div>
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Intermediate in Pre-Engineering</a>
+                  <span>2019 - 2021</span>
+                </h2>
+                <p>
+                  BISE FSD, Pakistan <br />
+                  Marks: 967/1100 
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ****************************************************************** -->
+<!--                          Experience                                -->
+<!-- ****************************************************************** -->
+<!-- ****************************************************************** -->
+<!--                          Experience                                -->
+<!-- ****************************************************************** -->
+<section class="colorlib-experience" data-section="experience">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading animate-box">Work Experience</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline-centered">
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-1">
+                <img src="images/research.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Research Assistant</a>
+                  <span>FAST-NUCES</span>
+                </h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <span>Feb, 2024 - Present</span>
+                </div>
+                <ul>
+                  <li>Proposed an Adaptive Access Control System (GB-ACL) for securing SDN-controlled IoT networks.</li>
+                  <li>Integrated game theory for strategic decision-making and utilized blockchain for dynamic, immutable ACL policies.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-2">
+                <img src="images/writing.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Research Writer</a>
+                  <span>FAST-NUCES</span>
+                </h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <span>Aug, 2024 - Sep, 2024</span>
+                </div>
+                <ul>
+                  <li>Conducted sentiment analysis to classify gaming tweets as abusive or non-abusive.</li>
+                  <li>Utilized BERT for enhanced sentiment classification.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-3">
+                <img src="images/ta.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Teaching Assistant</a>
+                  <span>FAST-NUCES</span>
+                </h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <span>Spring 2023 - Fall 2023</span>
+                </div>
+                <ul>
+                  <li>Courses Taught:
+                    <ul>
+                      <li>Programming Fundamentals</li>
+                      <li>Object-Oriented Programming</li>
+                      <li>Data Structures and Algorithms</li>
+                    </ul>
+                  </li>
+                  <li>Arranged vivas, prepared quizzes, and assisted 350+ students in core programming concepts.</li>
+                  <li>Received positive feedback from faculty and students for exceptional performance.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-4">
+                <img src="images/web.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Web Development Intern</a>
+                  <span>Qbatch</span>
+                </h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <span>Jul, 2022 - Aug, 2022</span>
+                </div>
+                <ul>
+                  <li>Developed a freelancing model using Ruby on Rails and SQLite.</li>
+                  <li>Enhanced web development skills, industry culture, and professionalism.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ****************************************************************** -->
+  <!--                     International Experience                      -->
+  <!-- ****************************************************************** -->
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft" data-section="iexperience">
+        <h2 class="colorlib-heading animate-box">International Experience</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline-centered">
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-5">
+                <img src="images/international.png" alt="" />
+              </div>
+
+              <div class="timeline-label">
+                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
+                  <a href="#">Teaching Assistant Data Analyst</a>
+                  <span>Leading Edge Skills</span>
+                </h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <span>Remote (USA)</span>
+                  <span>Jul, 2023 - Aug, 2023</span>
+                </div>
+                <ul>
+                  <li>Assisted 30+ international students from the USA, India, and Nigeria in understanding Data Analytics concepts.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ****************************************************************** -->
+<!-- 							Honors And Awards 														-->
+<!-- ****************************************************************** -->
+<section class="colorlib-experience" data-section="awards">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading animate-box">Honors and Awards</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline-centered">
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-1">
+                <img src="images/deanlist.png" alt="" />
+              </div>
+              <div class="timeline-label">
+                <h2>
+                  <a href="#">Dean's List</a>
+                  <span>6x Consecutive Semesters</span>
+                </h2>
+                <p>
+                  Enlisted in the Dean's List for academic excellence across six consecutive semesters.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-2">
+                <img src="images/icpc.png" alt="" />
+              </div>
+              <div class="timeline-label">
+                <h2>
+                  <a href="#">ICPC Qualification</a>
+                  <span>2021 & 2024</span>
+                </h2>
+                <p>
+                  Qualified for the prestigious International Collegiate Programming Contest (ICPC) on campus in both 2021 and 2024.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-3">
+                <img src="images/award.png" alt="" />
+              </div>
+              <div class="timeline-label">
+                <h2>
+                  <a href="#">Leading Edge Skills Scholarship</a>
+                  <span>2023</span>
+                </h2>
+                <p>
+                  Awarded a scholarship for excellence in Data Analytics from the Leading Edge Skills American Program.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon color-4">
+                <img src="images/bronze.png" alt="" />
+              </div>
+              <div class="timeline-label">
+                <h2>
+                  <a href="#">Bronze Medal</a>
+                  <span>2023</span>
+                </h2>
+                <p>
+                  Achieved a Bronze Medal for outstanding performance in academics and extracurricular activities.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- ****************************************************************** -->
+<!-- 							Projects												-->
+<!-- ****************************************************************** -->
+<section class="colorlib-work" data-section="work">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading animate-box">Projects</h2>
+      </div>
+    </div>
+    <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft"></div>
+
+    <div class="row">
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/medscript.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Med Script</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            A Data as a Service (DaaS) system collecting real doctor-patient data to assist healthcare researchers and doctors in making informed decisions.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 NextJs, Node.Js, MongoDB, React, Llama, OpenAI API, REST API, LLMs 〉
+          </div>
+        </div>
+      </div>
+
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/adaptive_acl.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Adaptive ACL</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            Designed an adaptive Access Control System (GB-ACL) for securing SDN-controlled IoT networks using game theory and blockchain for dynamic policies.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 Solidity, Game Theory, Blockchain, SDN, ACL 〉
+          </div>
+        </div>
+      </div>
+
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/urdu_classification.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Urdu Text Classification</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            Developed an NLP pipeline achieving 90% accuracy in sentiment analysis for Urdu text, overcoming challenges with noisy and complex datasets.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 ML, Data Preprocessing, TF-IDF, Word2Vec 〉
+          </div>
+        </div>
+      </div>
+
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/sentiment_analysis.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Game Abusive Classification</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            Researched and analyzed abusive language in gaming communities using BERT for sentiment classification and LDA for topic modeling.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 Python, NLP, NER, LDA, BERT, Sentiment Analysis 〉
+          </div>
+        </div>
+      </div>
+
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/text_editor.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Text Summarization Fine Tuning</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            Fine-tuned GPT2, Llama3, and BART models on custom datasets for improved text summarization performance.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 GPT2, Llama3, BART, SLURM 〉
+          </div>
+        </div>
+      </div>
+
+      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
+        <div class="project" style="background-image: url(images/freelancing_model.png)"></div>
+        <div>
+          <div style="text-align: center; font-size: 2rem">
+            <a style="color: black; font-weight: bolder" href="#">Freelancing Model</a>
+          </div>
+          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
+            Developed a web application for gig/project hiring with integrated review and rating features.
+          </div>
+          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
+            〈 Ruby on Rails, SQLite3, HTML, CSS, JavaScript 〉
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        
+<!-- ****************************************************************** -->
+<!-- 							Contact								-->
+<!-- ****************************************************************** -->
+<section class="colorlib-contact" data-section="contact">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div data-animate-effect="fadeInLeft">
+        <h2 class="colorlib-heading">Contact</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+          <div class="colorlib-icon">
+            <a target="_blank" href="mailto:im-haseeb@outlook.com"><i class="icon-mail"></i></a>
+          </div>
+          <div class="colorlib-text">
+            <p>
+              Get in touch
+              <br />
+              <a target="_blank" href="mailto:im-haseeb@outlook.com">im-haseeb@outlook.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+          <div class="colorlib-icon">
+            <a target="_blank" href="https://www.linkedin.com/in/muhammad-haseeb-18320720a">
+              <i class="icon-linkedin2"></i>
+            </a>
+          </div>
+          <div class="colorlib-text">
+            <p>
+              LinkedIn
+              <br />
+              <a target="_blank" href="https://www.linkedin.com/in/muhammad-haseeb-18320720a">Muhammad Haseeb Ashraf</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+          <div class="colorlib-icon">
+            <a target="_blank" href="tel:+92-320-7497709">
+              <i class="icon-phone"></i>
+            </a>
+          </div>
+          <div class="colorlib-text">
+            <p>
+              Phone
+              <br />
+              <a target="_blank" href="tel:+92-320-7497709">+92-320-7497709</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-md-push-1">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <!-- end:colorlib-main -->
+    </div>
+    <!-- end:container-wrap -->
+  </div>
+  <!-- end:colorlib-page -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Flexslider -->
+  <script src="js/jquery.flexslider-min.js"></script>
+  <!-- Owl carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Counters -->
+  <script src="js/jquery.countTo.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
