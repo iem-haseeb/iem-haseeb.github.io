@@ -1,950 +1,1273 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Haseeb Ashraf</title>
-  <link rel="icon" href="images/about.jfif" type="image/png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="author" content="" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Muhammad Haseeb Ashraf — AI/ML Engineer specializing in Computer Vision, Generative AI, Edge AI, Vision-Language Models, and scalable AI systems."
+/>
 
-  <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:image" content="" />
-  <meta name="twitter:url" content="" />
-  <meta name="twitter:card" content="" />
+<title>Muhammad Haseeb Ashraf — AI/ML Engineer</title>
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="shortcut icon" href="favicon.ico" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&display=swap"
+  rel="stylesheet"
+/>
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet" />
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="css/animate.css" />
-  <!-- Icomoon Icon Fonts-->
-  <link rel="stylesheet" href="css/icomoon.css" />
-  <!-- Bootstrap  -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <!-- Flexslider  -->
-  <link rel="stylesheet" href="css/flexslider.css" />
-  <!-- Flaticons  -->
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-  <!-- Theme style  -->
-  <link rel="stylesheet" href="css/style.css" />
+<style>
+:root{
+  --bg:#f4f8fc;
+  --card:#ffffff;
+  --text:#152234;
+  --body:#4d5c70;
+  --muted:#7a8ba1;
+  --line:#dfe9f5;
+  --blue:#2476d3;
+  --blue2:#0d5db6;
+  --sky:#e8f4ff;
+  --accent:#00a2ff;
+  --shadow:0 10px 30px rgba(18,50,90,.08);
+  --radius:18px;
+}
 
-  <!-- Modernizr JS -->
-  <script src="js/modernizr-2.6.2.min.js"></script>
-  <!-- FOR IE9 below -->
-  <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-  <style>
-    .card-profiles {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: centesr;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    .card {
-      width: 200px;
-      height: 200px;
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--bg);
+  color:var(--body);
+  line-height:1.7;
+  overflow-x:hidden;
+}
 
-    .card:hover, .pros:hover{
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    .pros{
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.container{
+  width:min(1140px,92%);
+  margin:auto;
+}
 
-    .icon {
-      font-size: 48px;
-      color: #ff0000;
-      /* Replace with your desired icon color */
-      margin-bottom: 10px;
-    }
+section{
+  padding:90px 0;
+}
 
-    .line {
-      text-align: center;
-      border-bottom: 1px solid #ccc;
-      width: 80%;
-    }
+a{
+  text-decoration:none;
+}
 
-    .section-container {
-      font-family: "Quicksand", Arial, sans-serif, "Playfair Display", Georgia,
-        serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+img{
+  max-width:100%;
+  display:block;
+}
 
-    .intro-text {
-      text-align: center;
-      font-weight: bold;
-    }
+/* NAV */
 
-    .intro-base {
-      font-size: 2em;
-      font-weight: bold;
-    }
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:999;
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
 
-    .name {
-      font-size: 4em;
+.nav-inner{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
 
-      margin: 0 0 10px 0;
-    }
+.logo{
+  font-family:'Fraunces',serif;
+  font-size:24px;
+  color:var(--text);
+  font-weight:700;
+}
 
-    .section-container h1,
-    h2 {
-      margin: 0.4em 0;
-    }
+.logo span{
+  color:var(--blue);
+}
 
-    .section-container h1 {
-      font-family: "Quicksand", Arial, sans-serif, "Playfair Display", Georgia,
-        serif;
-      font-size: 2.5m;
-    }
+.nav-links{
+  display:flex;
+  gap:12px;
+  list-style:none;
+}
 
-    .section-container h2 {
-      font-size: 2em;
-    }
+.nav-links a{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:600;
+  padding:10px 16px;
+  border-radius:999px;
+  transition:.2s ease;
+}
 
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff0000;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 8px;
-    }
+.nav-links a:hover{
+  background:var(--sky);
+  color:var(--blue);
+}
 
-    .button:hover {
-      transform: scale(1.05);
-      color: white !important;
-    }
+.nav-btn{
+  padding:12px 22px;
+  border-radius:999px;
+  background:var(--blue);
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  transition:.2s ease;
+}
 
-    .button:active {
-      color: white !important;
-      text-decoration: none;
-    }
+.nav-btn:hover{
+  background:var(--blue2);
+  transform:translateY(-1px);
+}
 
-    .button:focus {
-      color: white !important;
-      text-decoration: none;
-    }
+/* HERO */
 
-    /* about animations */
-    
-  </style>
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding-top:90px;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  width:700px;
+  height:700px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(0,162,255,.08), transparent 60%);
+  right:-200px;
+  top:-200px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .8fr;
+  gap:60px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--sky);
+  border:1px solid #cfe5ff;
+  color:var(--blue2);
+  padding:10px 18px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:26px;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#14c15f;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);opacity:1}
+  50%{transform:scale(.7);opacity:.5}
+  100%{transform:scale(1);opacity:1}
+}
+
+.hero h1{
+  font-family:'Fraunces',serif;
+  font-size:clamp(52px,8vw,88px);
+  line-height:1;
+  color:var(--text);
+  font-weight:400;
+  letter-spacing:-3px;
+}
+
+.hero h1 span{
+  color:var(--blue);
+  font-style:italic;
+}
+
+.hero-desc{
+  font-size:18px;
+  margin:26px 0;
+  max-width:700px;
+}
+
+.hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.hero-tags span{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--muted);
+}
+
+.hero-btns{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+
+.btn{
+  padding:14px 24px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:700;
+  transition:.2s ease;
+}
+
+.btn-primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:var(--blue2);
+}
+
+.btn-outline{
+  background:#fff;
+  border:1px solid var(--line);
+  color:var(--text);
+}
+
+.btn-outline:hover{
+  border-color:var(--blue);
+  color:var(--blue);
+}
+
+.hero-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.hero-card img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+
+.hero-card-content{
+  padding:24px;
+}
+
+.hero-mini{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+
+.hero-stat{
+  background:var(--bg);
+  border-radius:16px;
+  padding:18px;
+}
+
+.hero-stat h3{
+  font-size:28px;
+  color:var(--blue);
+  margin-bottom:4px;
+}
+
+.hero-stat p{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* SECTION */
+
+.section-tag{
+  display:inline-block;
+  padding:8px 16px;
+  background:var(--sky);
+  border-radius:999px;
+  color:var(--blue2);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.8px;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
+
+.section-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(34px,5vw,56px);
+  color:var(--text);
+  line-height:1.1;
+  letter-spacing:-2px;
+  margin-bottom:16px;
+}
+
+.section-title span{
+  color:var(--blue);
+  font-style:italic;
+}
+
+.section-sub{
+  max-width:760px;
+  color:var(--muted);
+  margin-bottom:50px;
+}
+
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+}
+
+.about-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:36px;
+  box-shadow:var(--shadow);
+}
+
+.about-card p{
+  margin-bottom:18px;
+}
+
+.stats{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.stat-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+.stat-box h3{
+  color:var(--blue);
+  font-size:34px;
+}
+
+.stat-box p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* EXPERIENCE */
+
+.timeline{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.job{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:34px;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+
+.job::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:5px;
+  border-radius:10px;
+  background:linear-gradient(var(--accent),var(--blue));
+}
+
+.job-top{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.job h3{
+  font-size:24px;
+  color:var(--text);
+}
+
+.job span{
+  background:var(--sky);
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--blue2);
+  font-weight:700;
+}
+
+.company{
+  color:var(--muted);
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.job ul{
+  padding-left:18px;
+}
+
+.job li{
+  margin-bottom:10px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.skill-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+.skill-card h3{
+  margin-bottom:18px;
+  color:var(--text);
+}
+
+.pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.pill{
+  background:var(--bg);
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:600;
+}
+
+/* PROJECTS */
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:20px;
+}
+
+.project{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:var(--shadow);
+  transition:.2s ease;
+}
+
+.project:hover{
+  transform:translateY(-4px);
+}
+
+.project .label{
+  display:inline-block;
+  margin-bottom:14px;
+  padding:6px 12px;
+  border-radius:999px;
+  background:var(--sky);
+  color:var(--blue2);
+  font-size:12px;
+  font-weight:700;
+}
+
+.project h3{
+  color:var(--text);
+  margin-bottom:12px;
+  font-size:22px;
+}
+
+.project p{
+  color:var(--muted);
+  margin-bottom:18px;
+  font-size:15px;
+}
+
+.stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.stack span{
+  background:var(--bg);
+  border:1px solid var(--line);
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:700;
+  color:var(--muted);
+}
+
+/* EDUCATION */
+
+.edu{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:40px;
+  box-shadow:var(--shadow);
+}
+
+.edu h3{
+  font-size:28px;
+  color:var(--text);
+  margin-bottom:12px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:linear-gradient(135deg,#0f4f91,#2476d3,#0fa2ff);
+  border-radius:34px;
+  padding:80px 40px;
+  text-align:center;
+  color:#fff;
+}
+
+.contact h2{
+  font-family:'Fraunces',serif;
+  font-size:clamp(40px,6vw,64px);
+  font-weight:400;
+  margin-bottom:16px;
+}
+
+.contact p{
+  max-width:700px;
+  margin:auto;
+  opacity:.85;
+  margin-bottom:36px;
+}
+
+.contact-links{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.contact-links a{
+  padding:14px 22px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.white{
+  background:#fff;
+  color:#0f4f91;
+}
+
+.glass{
+  border:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  background:rgba(255,255,255,.12);
+}
+
+/* FOOTER */
+
+footer{
+  padding:34px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:920px){
+
+  .hero-grid,
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:120px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
-  <div id="colorlib-page">
-    <div class="container-wrap">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-        aria-expanded="false" aria-controls="navbar"><i></i></a>
-      <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-        <div class="text-center">
-          <div class="author-img" style="background-image: url(images/about.jfif)"></div>
-          <h2 id="colorlib-logo">
-            <a href="index.html">Muhammad Haseeb Ashraf</a>
-          </h2>
-          <span class="position" style="font-size: 1.15rem !important">
-            <a href="https://www.linkedin.com/in/muhammad-haseeb-18320720a/" target="_blank">Software Developer</a>
-        
-            <br>
-            <a target="_blank" href="mailto:im-haseeb@outlook.com" style="text-transform: lowercase !important;">im-haseeb@outlook.com</a>
-          </span>
-          <span class="" style="font-size: 1.15rem !important"></span>
-        </div>
-        
-        <nav id="colorlib-main-menu" role="navigation" class="navbar">
-          <div id="navbar" class="collapse">
-            <ul>
-              <li class="active">
-                <a href="#" data-nav-section="home">Home</a>
-              </li>
-              <li><a href="#" data-nav-section="about">About</a></li>
-              <li><a href="#" data-nav-section="skills">Skills</a></li>
-              <li><a href="#" data-nav-section="education">Education</a></li>
-             
-              <li>
-                <a href="#" data-nav-section="experience">Experience</a>
-              </li>
-              <li>
-                <a href="#" data-nav-section="iexperience">International Experience</a>
-              </li>
-              <li>
-                <a href="#" data-nav-section="awards">Honor & Awards</a>
-              </li>
-              <li><a href="#" data-nav-section="work">Projects</a></li>
-              <li><a href="#" data-nav-section="contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </aside>
 
-      <div id="colorlib-main">
-        <section id="colorlib-hero" class="js-fullheight" data-section="home">
-          <div class="flexslider js-fullheight">
-            <ul class="slides">
-              <li style="background-color: #007bff;">
-                <div class="overlay"></div>
-                <div class="section-container main-intro" style="background: linear-gradient(-45deg, #e3f2fd, #ffffff, #c8e6c9);">
-                  <div class="intro-text">
-                    <div class="intro-base">I am</div>
-                    <p class="name">Muhammad Haseeb Ashraf</p>
-                    <h1>
-                      I'm a
-                      <span class="txt-rotate" data-period="200"
-                        data-rotate='[ "Software Engineer.","AI/ML Engineer.","Backend Developer."," Researcher.", "Computer Scientist."]'></span>
-                    </h1>
-                  </div>
-                  <a target="_blank" href="./Muhammad_Haseeb_Ashraf_CV.pdf" class="button">Download CV</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        
-          
-    <!-- ****************************************************************** -->
-<!--                            About Me                               -->
-<!-- ****************************************************************** -->
-<section class="colorlib-about" data-section="about">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-          <div class="col-md-12">
-            <div class="about-desc">
-              <h2 class="colorlib-heading">About Me</h2>
-              <p>
-                <strong>I am Muhammad Haseeb Ashraf,</strong> a passionate Computer Science student and Artificial Intelligence 
-                enthusiast. Currently pursuing my Bachelor's degree with a GPA of 3.71, I specialize in Natural Language 
-                Processing and aim to revolutionize the medical field through AI-powered solutions. I enjoy working on 
-                innovative projects and leveraging my technical expertise to create impactful solutions for real-world 
-                challenges.
-              </p>
-            </div>
-          </div>
-        </div>
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">MHA<span>.</span></div>
 
-        <div class="col-md-12 text-center">
-          <div class="docs-row text-center animate-box" data-animate-effect="fadeInLeft">
-            <div class="row-pro text-center">
-              <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInLeft">
-                <h2 class="colorlib-heading animate-box">Profiles</h2>
-              </div>
-              <div class="docss col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
-                <a class="card-profiles" target="_blank" href="https://github.com/iem-haseeb">
-                  <div class="card">
-                    <div class="icon">
-                      <img src="images/github.png" alt="GitHub Profile" />
-                    </div>
-                    <div class="line" style="color: #404040">
-                      GitHub Profile
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
-                <a class="card-profiles" target="_blank"
-                  href="https://www.linkedin.com/in/muhammad-haseeb-18320720a/">
-                  <div class="card">
-                    <div class="icon">
-                      <img src="images/linkedin.png" alt="LinkedIn Profile" />
-                    </div>
-                    <div class="line" style="color: #0288d1">
-                      LinkedIn Profile
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
-                <a class="card-profiles" target="_blank" href="https://www.fiverr.com/mhaseebashraf25/buying?source=avatar_menu_profile">
-                  <div class="card">
-                    <div class="icon">
-                      <img src="images/fiverr.png" alt="Fiverr Profile" />
-                    </div>
-                    <div class="line" style="color: #66bb6a">
-                      Fiverr Profile
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-3 animate-box" style="margin-bottom: 2em" data-animate-effect="fadeInLeft">
-                <a class="card-profiles" target="_blank" href="https://www.upwork.com/freelancers/~016092765ab11f5dd6">
-                  <div class="card">
-                    <div class="icon">
-                      <img src="images/upwork.png" alt="Upwork Profile" />
-                    </div>
-                    <div class="line" style="color: #66bb6a">
-                      Upwork Profile
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- <a href="Muhammad_Haseeb_Ashraf_CV.pdf" download class="nav-btn">
+      Download CV
+    </a> -->
   </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="badge">
+        <span class="dot"></span>
+        Open to Remote AI / ML Opportunities
+      </div>
+
+      <h1>
+        Muhammad <br />
+        <span>Haseeb</span> <br />
+        Ashraf
+      </h1>
+
+      <p class="hero-desc">
+        AI/ML Engineer focused on building production-ready AI systems across
+        Computer Vision, Generative AI, Vision-Language Models, Edge AI,
+        and scalable AI infrastructure.
+      </p>
+
+      <div class="hero-tags">
+        <span>Computer Vision</span>
+        <span>LLMs</span>
+        <span>VLMs</span>
+        <span>RAG</span>
+        <span>Edge AI</span>
+        <span>Qualcomm AI</span>
+        <span>Satellite AI</span>
+        <span>Backend Systems</span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="mailto:im-haseeb@outlook.com" class="btn btn-primary">
+          Get In Touch
+        </a>
+
+        <!-- <a
+          href="Muhammad_Haseeb_Ashraf_CV.pdf"
+          download
+          class="btn btn-outline"
+        >
+          Download CV
+        </a> -->
+
+        <a
+          href="https://linkedin.com/in/haseebml"
+          target="_blank"
+          class="btn btn-outline"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/iem-haseeb"
+          target="_blank"
+          class="btn btn-outline"
+        >
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <!-- ADD YOUR IMAGE HERE -->
+      <img src="assets/haseeb.jpg" alt="Muhammad Haseeb Ashraf" />
+
+      <div class="hero-card-content">
+
+        <h3 style="color:var(--text);font-size:24px;margin-bottom:8px;">
+          AI/ML Engineer
+        </h3>
+
+        <p style="color:var(--muted);">
+          Building reliable AI systems that solve real-world problems.
+        </p>
+
+        <div class="hero-mini">
+
+          <div class="hero-stat">
+            <h3>3.73</h3>
+            <p>CGPA — FAST-NUCES</p>
+          </div>
+
+          <div class="hero-stat">
+            <h3>8×</h3>
+            <p>Dean's List</p>
+          </div>
+
+          <div class="hero-stat">
+            <h3>5+</h3>
+            <p>International Clients</p>
+          </div>
+
+          <div class="hero-stat">
+            <h3>2×</h3>
+            <p>ICPC Qualifier</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-  
+<!-- ABOUT -->
 
-<!-- ****************************************************************** -->
-<!--                            Skills                                  -->
-<!-- ****************************************************************** -->
+<section id="about">
 
-<section class="colorlib-skills" data-section="skills">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading text-center" style="font-size: 3rem;">
-          Skills
-        </h2>
+  <div class="container">
+
+    <div class="section-tag">About</div>
+
+    <h2 class="section-title">
+      Building AI That <span>Actually Ships</span>
+    </h2>
+
+    <p class="section-sub">
+      I enjoy working on difficult engineering problems where AI needs to move
+      beyond experimentation and operate reliably in production environments.
+      My work spans computer vision, edge AI, generative AI systems, satellite
+      imagery, and multimodal intelligence.
+    </p>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+
+        <p>
+          I specialize in designing production-ready AI systems with a strong
+          focus on performance, scalability, and real-world deployment.
+        </p>
+
+        <p>
+          Over the last few years, I have worked across healthcare AI,
+          satellite imagery, conversational AI, OCR systems, document
+          intelligence, and on-device AI inference.
+        </p>
+
+        <p>
+          My engineering style focuses on ownership, fast iteration,
+          deployment-oriented thinking, and building systems that create
+          measurable impact instead of staying limited to research notebooks.
+        </p>
+
       </div>
+
+      <div class="stats">
+
+        <div class="stat-box">
+          <h3>170K+</h3>
+          <p>Sq km imagery processed in geospatial AI pipelines</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>95%</h3>
+          <p>Reduction in manual extraction via OCR automation systems</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>100+</h3>
+          <p>Conversation-turn evaluation pipeline for AI voice agents</p>
+        </div>
+
+      </div>
+
     </div>
-    <div class="row">
-      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-        <p>Below is a comprehensive list of my technical expertise, enhanced with icons for better presentation:</p>
-      </div>
 
-      <!-- Technical -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-        <h3><i class="icon-lightbulb-o"></i> Technical</h3>
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-tag">Experience</div>
+
+    <h2 class="section-title">
+      Professional <span>Experience</span>
+    </h2>
+
+    <div class="timeline">
+
+      <div class="job">
+
+        <div class="job-top">
+          <h3>AI / ML Engineer</h3>
+          <span>April 2025 — Present</span>
+        </div>
+
+        <div class="company">
+          Edge C Pvt. Ltd. · Lahore, Pakistan
+        </div>
+
         <ul>
-          <li>Problem Solving</li>
+
+          <li>
+            Built large-scale SAR-based geospatial intelligence pipelines using
+            multi-polarization satellite data for industrial asset detection in remote
+            environments, enabling automated monitoring where traditional field surveys
+            were slow, costly, and weather-dependent.
+          </li>
+
+          <li>
+            Developed and optimized production-grade YOLO11-based detection systems for
+            aerial and satellite imagery analysis of large-scale infrastructure, supporting
+            high-throughput automated inspection workflows with consistent real-world accuracy.
+          </li>
+
+          <li>
+            Engineered a geospatial intelligence pipeline combining multi-source satellite
+            imagery, aerial datasets, object detection models, and spatial data enrichment
+            techniques to assess large-area infrastructure characteristics, reducing manual
+            analysis cycles from weeks to automated compute-driven workflows.
+          </li>
+
+          <li>
+            Optimized deep learning inference pipelines (LightGlue and vision models) for
+            Qualcomm Snapdragon hardware, enabling hybrid CPU/GPU/NPU execution for
+            offline and bandwidth-constrained edge environments.
+          </li>
+
+          <li>
+            Developed OCR and document intelligence systems using PaddleOCR and DeepSeek OCR
+            for structured extraction from complex documents, reducing manual processing workload
+            by 95%+.
+          </li>
+
+          <li>
+            Built conversational AI and voice-driven automation systems with evaluation pipelines
+            to improve response quality, reliability, and scalability in production environments.
+          </li>
+
         </ul>
+
       </div>
 
-      <!-- Programming Languages & Tools -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-        <h3><i class="icon-code"></i> Programming Languages & Tools</h3>
+      <div class="job">
+
+        <div class="job-top">
+          <h3>AI Research Assistant</h3>
+          <span>Feb 2024 — Sep 2025</span>
+        </div>
+
+        <div class="company">
+          FAST-NUCES · Lahore, Pakistan
+        </div>
+
         <ul>
-          <li>C/C++</li>
-          <li>Python</li>
-          <li>Git</li>
+
+          <li>
+            Conducted interpretability analysis of transformer-based LLM architectures using
+            Explainable AI techniques to study model reasoning behavior and performance tradeoffs.
+          </li>
+
+          <li>
+            Designed a secure access control framework for distributed IoT environments using
+            blockchain-backed policy enforcement and game-theoretic decision models.
+          </li>
+
+          <li>
+            Developed NLP pipelines for toxic content detection in large-scale online communities
+            using transformer-based classification and topic modeling techniques.
+          </li>
+
         </ul>
+
       </div>
 
-      <!-- Data Analytics & Databases -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-        <h3><i class="icon-bar-chart"></i> Data Analytics & Databases</h3>
-        <ul>
-          <li>MySQL</li>
-          <li>Oracle</li>
-          <li>PowerBI</li>
-          <li>SQL</li>
-          <li>Looker Studio</li>
-          <li>Tableau</li>
-        </ul>
-      </div>
-
-      <!-- Web Development -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-        <h3><i class="icon-globe"></i> Web Development</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>Rails</li>
-          <li>NodeJS</li>
-          <li>AJAX</li>
-          <li>SQLite3</li>
-          <li>MongoDB</li>
-          <li>FastAPI</li>
-          <li>Docker</li>
-          <li>Redis</li>
-        </ul>
-      </div>
-
-      <!-- Android Development -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-        <h3><i class="icon-mobile"></i> Android Development</h3>
-        <ul>
-          <li>Android Studio</li>
-          <li>Java</li>
-          <li>Firebase</li>
-          <li>SQLite</li>
-          <li>Postman</li>
-        </ul>
-      </div>
-
-      <!-- AI & Machine Learning -->
-      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-        <h3><i class="icon-rocket"></i> Artificial Intelligence & Machine Learning</h3>
-        <ul>
-          <li>Exploratory Data Analysis (EDA)</li>
-          <li>Scikit-learn</li>
-          <li>Jupyter</li>
-          <li>Google Colab</li>
-          <li>Pandas</li>
-          <li>Numpy</li>
-          <li>Feature Extraction</li>
-          <li>Data Cleaning and Preprocessing</li>
-          <li>SLURM</li>
-        </ul>
-      </div>
     </div>
+
   </div>
+
+</section>
+<!-- SKILLS -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-tag">Skills</div>
+
+    <h2 class="section-title">
+      Technical <span>Stack</span>
+    </h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>AI / ML</h3>
+
+        <div class="pills">
+          <span class="pill">PyTorch</span>
+          <span class="pill">TensorFlow</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">Transformers</span>
+          <span class="pill">Fine-tuning</span>
+          <span class="pill">LoRA / PEFT</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>LLMs & GenAI</h3>
+
+        <div class="pills">
+          <span class="pill">RAG</span>
+          <span class="pill">Graph RAG</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">LangGraph</span>
+          <span class="pill">LlamaIndex</span>
+          <span class="pill">OpenAI API</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Computer Vision</h3>
+
+        <div class="pills">
+          <span class="pill">YOLO v8-v11</span>
+          <span class="pill">OpenCV</span>
+          <span class="pill">OCR</span>
+          <span class="pill">Satellite AI</span>
+          <span class="pill">SAR Imagery</span>
+          <span class="pill">BLIP-2</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Edge AI</h3>
+
+        <div class="pills">
+          <span class="pill">Qualcomm AI Toolkit</span>
+          <span class="pill">TensorRT</span>
+          <span class="pill">ONNX</span>
+          <span class="pill">Model Quantization</span>
+          <span class="pill">GPU/NPU Optimization</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend & Cloud</h3>
+
+        <div class="pills">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Kubernetes</span>
+          <span class="pill">AWS SageMaker</span>
+          <span class="pill">Azure AI</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Infrastructure</h3>
+
+        <div class="pills">
+          <span class="pill">CI/CD</span>
+          <span class="pill">FAISS</span>
+          <span class="pill">ChromaDB</span>
+          <span class="pill">Pinecone</span>
+          <span class="pill">LangFuse</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-<!-- ****************************************************************** -->
-<!-- 							Education 														-->
-<!-- ****************************************************************** -->
-<section class="colorlib-education" data-section="education">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading animate-box">Education</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="timeline-centered">
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-1">
-                <img src="images/graduation.png" alt="" />
-              </div>
+<!-- PROJECTS -->
 
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a>BSc Computer Science</a>
-                  <span>2021 - 2025</span>
-                </h2>
-                <p>
-                  FAST National University of Computer and Emerging Sciences, Pakistan <br />
-                  CGPA: 3.71
-                </p>
-                <p>Relevant Coursework: Programming Fundamentals, Object Oriented Programming, Data Structures, Design and Analysis of Algorithms, Databases, Operating Systems, Computer Networks, Artificial Intelligence, Natural Language Processing, Information Security, Probability and Statistics, Theory of Automata</p>
-              </div>
-            </div>
-          </article>
+<section id="projects">
 
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-3">
-                <img src="images/college.png" alt="" />
-              </div>
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Intermediate in Pre-Engineering</a>
-                  <span>2019 - 2021</span>
-                </h2>
-                <p>
-                  BISE FSD, Pakistan <br />
-                  Marks: 967/1100 
-                </p>
-              </div>
-            </div>
-          </article>
+  <div class="container">
+
+    <div class="section-tag">Projects</div>
+
+    <h2 class="section-title">
+      Selected <span>Projects</span>
+    </h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <div class="label">US Energy</div>
+        <h3>Energy Asset Detection System</h3>
+
+        <p>
+          Production SAR imagery classifier for oil rig and frac site detection
+          enabling automated surveillance across remote energy territories.
+        </p>
+
+        <div class="stack">
+          <span>YOLO</span>
+          <span>SAR</span>
+          <span>CVAT</span>
+          <span>Python</span>
         </div>
       </div>
+
+      <div class="project">
+        <div class="label">Geospatial AI</div>
+
+        <h3>Geospatial Infrastructure Intelligence Pipeline</h3>
+
+        <p>
+          Enterprise AI pipeline processing MAXAR and VEXCEL imagery for
+          automated road infrastructure assessment at scale.
+        </p>
+
+        <div class="stack">
+          <span>YOLO</span>
+          <span>QGIS</span>
+          <span>OSM</span>
+          <span>MAXAR</span>
+        </div>
+      </div>
+
+      <div class="project">
+
+        <div class="label">Fintech</div>
+
+        <h3>Enterprise Document Intelligence Platform</h3>
+
+        <p>
+          Graph RAG retrieval system across 1M+ financial documents with
+          relationship-aware semantic search.
+        </p>
+
+        <div class="stack">
+          <span>Neo4j</span>
+          <span>FastAPI</span>
+          <span>Graph RAG</span>
+          <span>Python</span>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="label">Healthcare AI</div>
+
+        <h3>Medical Consultation Intelligence Platform</h3>
+
+        <p>
+          AI healthcare platform transcribing doctor-patient conversations and
+          generating clinical recommendations.
+        </p>
+
+        <div class="stack">
+          <span>Next.js</span>
+          <span>LlamaIndex</span>
+          <span>MongoDB</span>
+          <span>OpenAI</span>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="label">Conversational AI</div>
+
+        <h3>Multi-Domain Conversational AI System</h3>
+
+        <p>
+          100+ module conversational AI platform for media research and
+          production workflows.
+        </p>
+
+        <div class="stack">
+          <span>Django</span>
+          <span>LangChain</span>
+          <span>LLMs</span>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="label">Edge AI</div>
+
+        <h3>On-Device YOLO Android Application</h3>
+
+        <p>
+          Fully on-device real-time object detection app running YOLO26n
+          natively on mid-range Android hardware.
+        </p>
+
+        <div class="stack">
+          <span>Android</span>
+          <span>YOLO26n</span>
+          <span>Qualcomm AI</span>
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- EDUCATION -->
 
-<!-- ****************************************************************** -->
-<!--                          Experience                                -->
-<!-- ****************************************************************** -->
-<!-- ****************************************************************** -->
-<!--                          Experience                                -->
-<!-- ****************************************************************** -->
-<section class="colorlib-experience" data-section="experience">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading animate-box">Work Experience</h2>
-      </div>
+<section id="education">
+
+  <div class="container">
+
+    <div class="section-tag">Education</div>
+
+    <h2 class="section-title">
+      Academic <span>Background</span>
+    </h2>
+
+    <div class="edu">
+
+      <h3>
+        BSc Computer Science
+      </h3>
+
+      <p style="margin-bottom:12px;">
+        FAST-National University of Computer and Emerging Sciences
+      </p>
+
+      <p>
+        CGPA: 3.73 / 4.0 · QS Rank #651–700
+      </p>
+
+      <br />
+
+      <p><strong>Achievements:</strong></p>
+      <ul>
+        <li> Cum Laude Honors</li>
+        <li>Dean’s List (8 Consecutive Terms)</li>
+        <li>Bronze Medal ×2</li>
+        <li>ICPC Qualifier 2021 & 2025</li>
+        <li>Leading Edge Skills American Scholarship</li>
+      </ul>
+
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="timeline-centered">
 
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-1">
-                <img src="images/research.png" alt="" />
-              </div>
-
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Research Assistant</a>
-                  <span>FAST-NUCES</span>
-                </h2>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Feb, 2024 - Present</span>
-                </div>
-                <ul>
-                  <li>Proposed an Adaptive Access Control System (GB-ACL) for securing SDN-controlled IoT networks.</li>
-                  <li>Integrated game theory for strategic decision-making and utilized blockchain for dynamic, immutable ACL policies.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-2">
-                <img src="images/writing.png" alt="" />
-              </div>
-
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Research Writer</a>
-                  <span>FAST-NUCES</span>
-                </h2>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Aug, 2024 - Sep, 2024</span>
-                </div>
-                <ul>
-                  <li>Conducted sentiment analysis to classify gaming tweets as abusive or non-abusive.</li>
-                  <li>Utilized BERT for enhanced sentiment classification.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-3">
-                <img src="images/ta.png" alt="" />
-              </div>
-
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Teaching Assistant</a>
-                  <span>FAST-NUCES</span>
-                </h2>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Spring 2023 - Fall 2023</span>
-                </div>
-                <ul>
-                  <li>Courses Taught:
-                    <ul>
-                      <li>Programming Fundamentals</li>
-                      <li>Object-Oriented Programming</li>
-                      <li>Data Structures and Algorithms</li>
-                    </ul>
-                  </li>
-                  <li>Arranged vivas, prepared quizzes, and assisted 350+ students in core programming concepts.</li>
-                  <li>Received positive feedback from faculty and students for exceptional performance.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-4">
-                <img src="images/web.png" alt="" />
-              </div>
-
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Web Development Intern</a>
-                  <span>Qbatch</span>
-                </h2>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Jul, 2022 - Aug, 2022</span>
-                </div>
-                <ul>
-                  <li>Developed a freelancing model using Ruby on Rails and SQLite.</li>
-                  <li>Enhanced web development skills, industry culture, and professionalism.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </div>
   </div>
 
-  <!-- ****************************************************************** -->
-  <!--                     International Experience                      -->
-  <!-- ****************************************************************** -->
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft" data-section="iexperience">
-        <h2 class="colorlib-heading animate-box">International Experience</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="timeline-centered">
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-5">
-                <img src="images/international.png" alt="" />
-              </div>
-
-              <div class="timeline-label">
-                <h2 style="display: flex; justify-content: space-between; margin-bottom: 0px !important;">
-                  <a href="#">Teaching Assistant Data Analyst</a>
-                  <span>Leading Edge Skills</span>
-                </h2>
-                <div style="display: flex; justify-content: space-between;">
-                  <span>Remote (USA)</span>
-                  <span>Jul, 2023 - Aug, 2023</span>
-                </div>
-                <ul>
-                  <li>Assisted 30+ international students from the USA, India, and Nigeria in understanding Data Analytics concepts.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
+<!-- CONTACT -->
 
-<!-- ****************************************************************** -->
-<!-- 							Honors And Awards 														-->
-<!-- ****************************************************************** -->
-<section class="colorlib-experience" data-section="awards">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading animate-box">Honors and Awards</h2>
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact">
+
+      <h2>
+        Let's Build Something Meaningful
+      </h2>
+
+      <p>
+        Open to remote AI engineering opportunities, research collaborations,
+        and ambitious projects involving Computer Vision, Generative AI,
+        Edge AI, and scalable intelligent systems.
+      </p>
+
+      <div class="contact-links">
+
+        <a href="mailto:im-haseeb@outlook.com" class="white">
+          im-haseeb@outlook.com
+        </a>
+
+        <a
+          href="https://linkedin.com/in/haseebml"
+          target="_blank"
+          class="glass"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/iem-haseeb"
+          target="_blank"
+          class="glass"
+        >
+          GitHub
+        </a>
+
       </div>
+
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="timeline-centered">
 
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-1">
-                <img src="images/deanlist.png" alt="" />
-              </div>
-              <div class="timeline-label">
-                <h2>
-                  <a href="#">Dean's List</a>
-                  <span>6x Consecutive Semesters</span>
-                </h2>
-                <p>
-                  Enlisted in the Dean's List for academic excellence across six consecutive semesters.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-2">
-                <img src="images/icpc.png" alt="" />
-              </div>
-              <div class="timeline-label">
-                <h2>
-                  <a href="#">ICPC Qualification</a>
-                  <span>2021 & 2024</span>
-                </h2>
-                <p>
-                  Qualified for the prestigious International Collegiate Programming Contest (ICPC) on campus in both 2021 and 2024.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-3">
-                <img src="images/award.png" alt="" />
-              </div>
-              <div class="timeline-label">
-                <h2>
-                  <a href="#">Leading Edge Skills Scholarship</a>
-                  <span>2023</span>
-                </h2>
-                <p>
-                  Awarded a scholarship for excellence in Data Analytics from the Leading Edge Skills American Program.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-            <div class="timeline-entry-inner">
-              <div class="timeline-icon color-4">
-                <img src="images/bronze.png" alt="" />
-              </div>
-              <div class="timeline-label">
-                <h2>
-                  <a href="#">Bronze Medal</a>
-                  <span>2023</span>
-                </h2>
-                <p>
-                  Achieved a Bronze Medal for outstanding performance in academics and extracurricular activities.
-                </p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </div>
   </div>
+
 </section>
 
+<footer>
+  © 2026 Muhammad Haseeb Ashraf · Built with purpose from Pakistan
+</footer>
 
-
-   <!-- ****************************************************************** -->
-<!-- 							Projects												-->
-<!-- ****************************************************************** -->
-<section class="colorlib-work" data-section="work">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading animate-box">Projects</h2>
-      </div>
-    </div>
-    <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft"></div>
-
-    <div class="row">
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/medscript.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Med Script</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            A Data as a Service (DaaS) system collecting real doctor-patient data to assist healthcare researchers and doctors in making informed decisions.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 NextJs, Node.Js, MongoDB, React, Llama, OpenAI API, REST API, LLMs 〉
-          </div>
-        </div>
-      </div>
-
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/adaptive_acl.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Adaptive ACL</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            Designed an adaptive Access Control System (GB-ACL) for securing SDN-controlled IoT networks using game theory and blockchain for dynamic policies.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 Solidity, Game Theory, Blockchain, SDN, ACL 〉
-          </div>
-        </div>
-      </div>
-
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/urdu_classification.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Urdu Text Classification</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            Developed an NLP pipeline achieving 90% accuracy in sentiment analysis for Urdu text, overcoming challenges with noisy and complex datasets.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 ML, Data Preprocessing, TF-IDF, Word2Vec 〉
-          </div>
-        </div>
-      </div>
-
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/sentiment_analysis.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Game Abusive Classification</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            Researched and analyzed abusive language in gaming communities using BERT for sentiment classification and LDA for topic modeling.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 Python, NLP, NER, LDA, BERT, Sentiment Analysis 〉
-          </div>
-        </div>
-      </div>
-
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/text_editor.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Text Summarization Fine Tuning</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            Fine-tuned GPT2, Llama3, and BART models on custom datasets for improved text summarization performance.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 GPT2, Llama3, BART, SLURM 〉
-          </div>
-        </div>
-      </div>
-
-      <div class="pros col-md-12 animate-box project-wraper" data-animate-effect="fadeInLeft">
-        <div class="project" style="background-image: url(images/freelancing_model.png)"></div>
-        <div>
-          <div style="text-align: center; font-size: 2rem">
-            <a style="color: black; font-weight: bolder" href="#">Freelancing Model</a>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; text-align: center;">
-            Developed a web application for gig/project hiring with integrated review and rating features.
-          </div>
-          <div style="font-weight: bold; font-size: 1.8rem; text-align: center;">
-            〈 Ruby on Rails, SQLite3, HTML, CSS, JavaScript 〉
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-        
-<!-- ****************************************************************** -->
-<!-- 							Contact								-->
-<!-- ****************************************************************** -->
-<section class="colorlib-contact" data-section="contact">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <div data-animate-effect="fadeInLeft">
-        <h2 class="colorlib-heading">Contact</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5">
-        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-          <div class="colorlib-icon">
-            <a target="_blank" href="mailto:im-haseeb@outlook.com"><i class="icon-mail"></i></a>
-          </div>
-          <div class="colorlib-text">
-            <p>
-              Get in touch
-              <br />
-              <a target="_blank" href="mailto:im-haseeb@outlook.com">im-haseeb@outlook.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-          <div class="colorlib-icon">
-            <a target="_blank" href="https://www.linkedin.com/in/muhammad-haseeb-18320720a">
-              <i class="icon-linkedin2"></i>
-            </a>
-          </div>
-          <div class="colorlib-text">
-            <p>
-              LinkedIn
-              <br />
-              <a target="_blank" href="https://www.linkedin.com/in/muhammad-haseeb-18320720a">Muhammad Haseeb Ashraf</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-          <div class="colorlib-icon">
-            <a target="_blank" href="tel:+92-320-7497709">
-              <i class="icon-phone"></i>
-            </a>
-          </div>
-          <div class="colorlib-text">
-            <p>
-              Phone
-              <br />
-              <a target="_blank" href="tel:+92-320-7497709">+92-320-7497709</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-7 col-md-push-1">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-            <form action="">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email" />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
-              </div>
-              <div class="form-group">
-                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      </div>
-      <!-- end:colorlib-main -->
-    </div>
-    <!-- end:container-wrap -->
-  </div>
-  <!-- end:colorlib-page -->
-
-  <!-- jQuery -->
-  <script src="js/jquery.min.js"></script>
-  <!-- jQuery Easing -->
-  <script src="js/jquery.easing.1.3.js"></script>
-  <!-- Bootstrap -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Waypoints -->
-  <script src="js/jquery.waypoints.min.js"></script>
-  <!-- Flexslider -->
-  <script src="js/jquery.flexslider-min.js"></script>
-  <!-- Owl carousel -->
-  <script src="js/owl.carousel.min.js"></script>
-  <!-- Counters -->
-  <script src="js/jquery.countTo.js"></script>
-
-  <!-- MAIN JS -->
-  <script src="js/main.js"></script>
 </body>
-
 </html>
